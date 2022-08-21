@@ -1,16 +1,14 @@
 {
-  "name": "redfox-case3",
+  "name": "testes-no-backend",
   "version": "1.0.0",
-  "engines": {
-    "node": "16.13.2",
-    "npm": "8.1.2"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node --inspect ./build/index.js",
-    "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
-    "build": "clear && echo \"Transpiling files...\" && tsc && echo \"Done!\" "
+    "start": "node  ./build/index.js",
+    "dev": "clear && ts-node-dev --transpile-only --ignore-watch node_modules ./src/index.ts",
+    "build": "clear && echo \"Transpiling files...\" && tsc && echo \"Done!\" ",
+    "test": "clear && echo \"Running tests...\" && jest",
+    "postinstall": "tsc"
   },
     "author": "Ricardo Ribeiro <rickhard@bol.com.br>",
     "license": "ISC",
@@ -22,7 +20,7 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^2.1.0",
     "mysql": "^2.18.1",
-    "ts-node-dev": "^2.0.0",
+    "ts-node-dev": "^1.0.0-pre.63",
     "ts-node": "^10.8.2",
     "uuid": "^8.3.2",
     "jest": "^28.1.3",
