@@ -8,8 +8,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node  ./build/index.js",
-    "dev": "clear && ts-node-dev --transpile-only --ignore-watch node_modules ./src/index.ts",
+    "start": "npm run build && node --inspect ./build/index.js",
+    "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
     "build": "clear && echo \"Transpiling files...\" && tsc && echo \"Done!\" "
   },
     "author": "Ricardo Ribeiro <rickhard@bol.com.br>",
