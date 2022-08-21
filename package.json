@@ -1,17 +1,15 @@
 {
-  "name": "testes-no-backend",
+  "name": "redfox-case3",
   "version": "1.0.0",
   "engines": {
-    "node": "16.x"
+    "node": "16.13.2"
   },
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node  ./build/index.js",
     "dev": "clear && ts-node-dev --transpile-only --ignore-watch node_modules ./src/index.ts",
-    "build": "clear && echo \"Transpiling files...\" && tsc && echo \"Done!\" ",
-    "test": "clear && echo \"Running tests...\" && jest",
-    "postinstall": "tsc"
+    "build": "clear && echo \"Transpiling files...\" && tsc && echo \"Done!\" "
   },
     "author": "Ricardo Ribeiro <rickhard@bol.com.br>",
     "license": "ISC",
