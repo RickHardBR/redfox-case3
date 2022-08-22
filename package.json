@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node  ./build/index.js",
     "dev": "clear && ts-node-dev --transpile-only --ignore-watch node_modules ./src/index.ts",
-    "build": "clear && echo \"Transpiling files...\" && tsc && echo \"Done!\" ",
+    "build": "tsc",
     "test": "clear && echo \"Running tests...\" && jest",
     "postinstall": "tsc"
   },
